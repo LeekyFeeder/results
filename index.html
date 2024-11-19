@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Gesture Comparison Videos</title>
+    <style>
+        /* Center alignment and styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #video-section {
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gesture-container {
+            margin-bottom: 40px;
+        }
+
+        .video-pair {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 20px 0 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-section">
+        <h1>Gesture Comparison Videos</h1>
+        <p>Each gesture is displayed with two videos: 3D Hand Reconstructed Results (top) and Ground Truth - Leap Motion (bottom).</p>
+        <p>Red, black, blue, green, and cyan represent the left-hand joints of the thumb, index finger, middle finger, ring finger, and pinky, respectively.</p>
+        
+        <!-- Gesture 1 -->
+        <div class="gesture-container">
+            <h2>Single Tap</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture1_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture1_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Gesture 2 -->
+        <div class="gesture-container">
+            <h2>Double Tap</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture2_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture2_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+ 
+        
+        <!-- Gesture 3 -->
+        <div class="gesture-container">
+            <h2>Pinch and Hold</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture3_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture3_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Gesture 4 -->
+        <div class="gesture-container">
+            <h2>Pinch and Slide</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture4_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture4_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Gesture 5 -->
+        <div class="gesture-container">
+            <h2>Rub</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstruction Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture5_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture5_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Gesture 6 -->
+        <div class="gesture-container">
+            <h2>Whole Hand Close</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results (2.5X Slower)</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture6_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="static/videos/gesture6_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Uncommented gestures for future use -->
+        <!-- 
+
+
+
+        <div class="gesture-container">
+            <h2>G3: Pinch and Hold</h2>
+            <div class="video-pair">
+                <h3>3D Hand Reconstructed Results</h3>
+                <video width="400" controls>
+                    <source src="/static/videos/gesture3_generated.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Ground Truth</h3>
+                <video width="400" controls>
+                    <source src="/static/videos/gesture3_groundtruth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+
+        -->
+    </div>
+</body>
+</html>
